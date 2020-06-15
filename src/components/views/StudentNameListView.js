@@ -10,7 +10,7 @@ const StudentNameListView = (props) => {
   return (
     <>
       <div>
-        <p>{props.students.length} Students</p>
+        <p>Students: {props.students.length} </p>
         <ul className="students">
           {props.students.map((student) => (
             <li key={student.id} className="student-name">

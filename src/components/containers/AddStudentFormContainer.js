@@ -10,7 +10,9 @@ class AddStudentFormContainer extends Component {
     this.state = {
       firstName: "",
       lastName: "",
-      GPA: "",      
+      email: "",
+      gpa: 0,  
+      imageUrl: "",    
       isValidName: false,
       errors: {},
     };
@@ -58,7 +60,9 @@ class AddStudentFormContainer extends Component {
         <AddStudentFormView
           firstName={this.state.firstName}
           lastName={this.state.lastName}
-          GPA={this.state.GPA}          
+          email={this.state.email}
+          gpa={this.state.gpa}  
+          imageUrl={this.state.imageUrl}        
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
         />
