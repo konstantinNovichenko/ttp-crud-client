@@ -40,7 +40,7 @@ class AddStudentToCampusContainer extends Component {
                 console.log(student.campusId);
                 return (
                   <option value={student.id} key={student.id}>
-                    {student.firstName}
+                    {student.firstName} {student.lastName}
                   </option>
                 );
               })}
